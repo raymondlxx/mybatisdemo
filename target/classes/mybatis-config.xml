@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <!-- 全局别名设置，在映射文件中只需写别名，而不必写出整个类路径  -->
+    <typeAliases>
+        <typeAlias type="com.deppon.test05.entity.PersonEntity" alias="PersonEntity"/>
+    </typeAliases>
+
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC" />
+            <dataSource type="POOLED">
+                <property name="driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
+                <property name="url" value="jdbc:sqlserver://localhost:1433;DatabaseName=Demo" />
+                <property name="username" value="demo_user" />
+                <property name="password" value="demo_user" />
+            </dataSource>
+        </environment>
+    </environments>
+
+    <mappers>
+        <mapper resource="com/deppon/test05/mapper/PersonEntityMapper.xml" />
+        <mapper resource="com/deppon/test05/mapper/CustomerEntityMapper.xml" />
+    </mappers>
+
+</configuration>  

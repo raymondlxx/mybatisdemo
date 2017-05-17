@@ -1,0 +1,7 @@
+com\deppon\test05\entity\PersonEntity.class
+com\deppon\test05\entity\CustomerKey.class
+com\deppon\test05\dao\CustomerMapper.class
+com\deppon\test05\dao\IPersonEntityDao.class
+com\deppon\test05\util\MyBatisUtil.class
+com\deppon\test05\dao\impl\PersonEntityDao.class
+com\deppon\test05\entity\Customer.class
